@@ -33,7 +33,7 @@ int main() {
 
     // Insert the new element
     arr[pos] = newelement;
-    len++; // array size increases by 1
+    len++;
 
     // Print the new array
     printf("Array after insertion:\n");
