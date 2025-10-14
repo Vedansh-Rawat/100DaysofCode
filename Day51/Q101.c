@@ -6,7 +6,7 @@ Write a Program to take a sorted array(say nums[]) and an integer (say target) a
 int main(){
     // Making the sorted array
     int len;
-    printf("Enter the length of string: \n");
+    printf("Enter the length of array: \n");
     scanf("%d", &len);
     int nums[len];
     for (int i = 0; i < len; i++){
