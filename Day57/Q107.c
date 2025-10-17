@@ -7,7 +7,7 @@ N.B:
 
 #include <stdio.h>
 
-  int main(){
+int main(){
   // Making the array
   int len;
   printf("Enter the length of array: \n");
