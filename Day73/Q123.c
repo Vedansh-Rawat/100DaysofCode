@@ -8,16 +8,18 @@ int main(){
   FILE *fptr;
   fptr = fopen("sample.txt", "r");
   char str[500];
-  int numofchar = 0, numofwords = 0, numoflines = 0;
+  int numofchar = 0, numofwords = 0, numoflines = 1;
   while (fgets(str, sizeof(str), fptr) != NULL){
     for (int i = 0; str[i] != '\0'; i++){
-      char ch = str[i];
+    
+    char ch = str[i];
     
     if (ch != '\n'){
       numofchar++;
     }
     
-    if (ch == '\n' || ch == '\r'){
+
+    if (ch == '\n'){
       numoflines++;
     }
     
@@ -27,10 +29,6 @@ int main(){
     }
   }
 
-  if (numofchar > 0){
-    numoflines++;
-  }
-  
   printf("Number of characters: %d\n", numofchar);
   printf("Number of words: %d\n", numofwords);
   printf("Number of lines: %d\n", numoflines);
