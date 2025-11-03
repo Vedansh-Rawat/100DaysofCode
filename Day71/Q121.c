@@ -21,8 +21,8 @@ int main(){
   printf("Enter your age: \n");
   scanf("%d", &age);
 
-  fprintf(fptr, "My name is %s.\n", name);
-  fprintf(fptr, "I am %d years old.", age);
+  fprintf(fptr, "Name: %s\n", name);
+  fprintf(fptr, "Age: %d\n", age);
   printf("File created successfully! Data written to info.txt");
   fclose(fptr);
 }
